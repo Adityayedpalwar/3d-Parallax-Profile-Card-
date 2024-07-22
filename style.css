@@ -1,0 +1,91 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://cdn.discordapp.com/attachments/1196764993518047263/1264912811327357008/lv_0_20240720223352.gif?ex=669f995b&is=669e47db&hm=09c2b6004907528beb6bb69e26d4540a7d10ea86624a443af9d1a9cb61d88d9f&');
+    font-family: Arial, sans-serif;
+    
+    
+}
+
+.container {
+    perspective: 1000px;
+
+}
+
+.profile-card {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    background:url('https://cdn.discordapp.com/attachments/1196764993518047263/1264912763252375574/OR.gif?ex=669f994f&is=669e47cf&hm=21c7f65601641bf3505d2729566c2b4c6753d1ae1b50f7d3369a138ddbb9c019&');
+    text-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgb(255, 255, 255, 0.2);
+    transform-style: preserve-2d;
+    transition: transform 0.5s;
+}
+
+.profile-card:hover {
+    transform: rotateY(10deg) rotateX(10deg);
+}
+
+.profile-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 205px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit:cover;
+}
+
+.profile-info {
+    padding: 10px;
+    text-align: center;
+    transform: translateZ(60px);
+}
+.profile-info h1 {
+    padding:50px;
+    font-size: 20px; 
+    
+    margin: 10;
+    color:#ff0000;
+
+}
+.profile-info p {
+  padding:0px;
+    font-size:30px;
+    margin:0;
+    color:#fff000
+}
+
+
+.social-icons {
+    margin-top: 0px;
+}
+
+.social-icons a {
+    padding:0px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    
+    padding:0px;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
